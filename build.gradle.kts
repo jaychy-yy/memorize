@@ -26,6 +26,9 @@ dependencies {
 
     implementation("io.jsonwebtoken:jjwt:0.9.1")
 
+//    implementation("org.jetbrains.exposed:exposed:0.8.5")
+    implementation("org.jsoup:jsoup:1.11.1")
+
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
@@ -34,11 +37,7 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-jackson:2.9.0")
 
-    implementation("io.springfox:springfox-swagger2:2.9.2")
-    implementation("io.springfox:springfox-swagger-ui:2.9.2")
-
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testRuntimeOnly("com.h2database:h2")
 }
 
 tasks.withType<KotlinCompile> {

@@ -1,1 +1,1 @@
-rootProject.name = "crawling"
+rootProject.name = "SpringBootDocsCrawling"

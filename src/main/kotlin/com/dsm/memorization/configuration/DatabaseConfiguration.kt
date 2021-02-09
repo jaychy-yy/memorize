@@ -1,4 +1,4 @@
-package com.dsm.crawling.configuration
+package com.dsm.memorization.configuration
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.jdbc.DataSourceBuilder
