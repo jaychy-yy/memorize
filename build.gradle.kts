@@ -15,6 +15,9 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://dl.bintray.com/kotlin/exposed")
+    }
 }
 
 dependencies {
@@ -26,7 +29,7 @@ dependencies {
 
     implementation("io.jsonwebtoken:jjwt:0.9.1")
 
-//    implementation("org.jetbrains.exposed:exposed:0.8.5")
+    implementation("org.jetbrains.exposed:exposed:0.5.0")
     implementation("org.jsoup:jsoup:1.11.1")
 
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")

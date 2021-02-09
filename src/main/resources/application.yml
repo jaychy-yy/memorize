@@ -9,6 +9,4 @@ spring:
       enabled: always
 server:
   address: 0.0.0.0
-  port: 8889
-  servlet:
-    context-path: /saturn
+  port: 6180
