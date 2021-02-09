@@ -5,7 +5,7 @@ import org.jetbrains.exposed.sql.Table
 import org.jetbrains.exposed.sql.insert
 import org.jetbrains.exposed.sql.transactions.transaction
 
-object Word : Table("word") {
+object WordEntity : Table("word") {
     val id = integer(name = "id").autoIncrement().primaryKey()
     val englishWord = varchar(name = "english_word", length = 20)
     val koreanWord = varchar(name = "korean_word", length = 20)
@@ -15,10 +15,8 @@ object Word : Table("word") {
 class DatabaseConnector {
 
     fun insert(english: String, korean: String, wordCount: Int) {
-        connect()
-
         transaction {
-            Word.insert {
+            WordEntity.insert {
                 it[englishWord] = english
                 it[koreanWord] = korean
                 it[count] = wordCount
@@ -26,7 +24,17 @@ class DatabaseConnector {
         }
     }
 
-    private fun connect() {
+    fun insertAll(words: List<Word>) {
+        words.forEach {
+            insert(
+                english = it.englishWord,
+                korean = it.koreanWord,
+                wordCount = it.count,
+            )
+        }
+    }
+
+    fun connect() {
         Database.connect(DatabaseProperty().dataSource())
     }
 }

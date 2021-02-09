@@ -1,6 +1,7 @@
 package com.dsm.crawling
 
 import org.springframework.boot.jdbc.DataSourceBuilder
+import javax.sql.DataSource
 
 class DatabaseProperty(
     private val driverClassName: String = "com.mysql.cj.jdbc.Driver",
@@ -9,7 +10,7 @@ class DatabaseProperty(
     private val password: String = "dhwlddjgmanf",
 ) {
 
-    fun dataSource() =
+    fun dataSource(): DataSource =
         DataSourceBuilder
             .create()
             .driverClassName(driverClassName)

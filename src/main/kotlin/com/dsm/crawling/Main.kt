@@ -4,9 +4,15 @@ fun main() {
     val crawler = JsoupCrawler()
     val popularWords = crawler.docsCrawling()
 
-    DatabaseConnector().insert(
-        english = "hello",
-        korean = "안녕하세요",
-        wordCount = 1,
+    val databaseConnector = DatabaseConnector()
+    databaseConnector.connect()
+    databaseConnector.insertAll(
+        popularWords.map { (english, count) ->
+            Word(
+                englishWord = english,
+                koreanWord = english,
+                count = count,
+            )
+        }
     )
 }
