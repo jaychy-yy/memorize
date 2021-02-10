@@ -9,6 +9,11 @@
 - Kotlin Exposed 프레임워크를 이용하여 [영어]-[한글]-[갯수] 조합으로 데이터베이스에 저장
 - 이를 토대로 Spring Boot 서버를 구축해 개발자용 영어 단어 암기~~
 
+## Reference
+- Kotlin Exposed Framework [Github] 문서 (https://github.com/JetBrains/Exposed)
+- Kotlin Exposed Framework [Baeldung on Kotlin] 문서 (https://www.baeldung.com/kotlin/exposed-persistence)
+- Kakao Translation API 카카오 문서 (https://developers.kakao.com/docs/latest/ko/translate/dev-guide)
+
 ## Library & Framework
 - Spring Boot 2.4.1
 - Kotlin 1.4.21
