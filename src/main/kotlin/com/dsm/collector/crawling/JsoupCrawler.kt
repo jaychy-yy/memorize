@@ -1,4 +1,4 @@
-package com.dsm.crawling
+package com.dsm.collector.crawling
 
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document

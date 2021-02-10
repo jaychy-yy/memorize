@@ -1,4 +1,4 @@
-package com.dsm.crawling
+package com.dsm.collector.crawling
 
 enum class UnUsePattern(val pattern: Regex) {
     INCLUDE_SPECIAL_CHARACTER(Regex("[~!@#$%^&*]*")),

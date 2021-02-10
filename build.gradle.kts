@@ -32,6 +32,9 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed:0.5.0")
     implementation("org.jsoup:jsoup:1.11.1")
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.4.2")
+
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")

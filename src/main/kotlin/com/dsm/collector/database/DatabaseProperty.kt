@@ -1,4 +1,4 @@
-package com.dsm.crawling
+package com.dsm.collector.database
 
 import org.springframework.boot.jdbc.DataSourceBuilder
 import javax.sql.DataSource
