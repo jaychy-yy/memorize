@@ -8,13 +8,13 @@ import javax.sql.DataSource
 
 @Configuration
 class DatabaseConfiguration(
-    @Value("\${DATABASE_DRIVER:com.mysql.cj.jdbc.Driver}")
+    @Value("\${DATABASE_DRIVER}")
     val driverClassName: String,
-    @Value("\${DATABASE_URL:jdbc:mysql://localhost:3306/pick?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC}")
+    @Value("\${DATABASE_URL}")
     val url: String,
-    @Value("\${DATABASE_USERNAME:root}")
+    @Value("\${DATABASE_USERNAME}")
     val username: String,
-    @Value("\${DATABASE_PASSWORD:1111}")
+    @Value("\${DATABASE_PASSWORD}")
     val password: String,
 ) {
 
