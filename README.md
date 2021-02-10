@@ -1,7 +1,7 @@
 # Spring Boot Docs Crawler
 
 ## Flow
-- Jsoup 라이브러리를 이용하여 Spring Boot Docs를 크롤링하여 가장 많이 나온 영어 단어를 분석
+- Jsoup 라이브러리를 이용하여 Spring Boot Docs를 크롤링하여 가장 많이 나온 영어 단어를 분석  
   (https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle)
 - Kakao Translation API를 이용하여 영어 단어를 번역
 - Kotlin Exposed 프레임워크를 이용하여 [영어]-[한글]-[갯수] 조합으로 데이터베이스에 저장
