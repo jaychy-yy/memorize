@@ -1,0 +1,23 @@
+DROP DATABASE IF EXISTS crawling;
+CREATE DATABASE IF NOT EXISTS crawling;
+USE crawling;
+
+DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS word;
+
+CREATE TABLE IF NOT EXISTS user(
+    id BIGINT NOT NULL,
+    password VARCHAR(20) NOT NULL,
+    name VARCHAR(4) NOT NULL,
+
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS word(
+    id BIGINT AUTO_INCREMENT,
+    english_word VARCHAR(20) NOT NULL,
+    korean_word VARCHAR(20) NOT NULL,
+    count INT default 1,
+
+    PRIMARY KEY (id)
+);
