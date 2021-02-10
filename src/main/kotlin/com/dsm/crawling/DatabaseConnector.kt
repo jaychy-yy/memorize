@@ -14,16 +14,6 @@ object WordEntity : Table("word") {
 
 class DatabaseConnector {
 
-    fun insert(english: String, korean: String, wordCount: Int) {
-        transaction {
-            WordEntity.insert {
-                it[englishWord] = english
-                it[koreanWord] = korean
-                it[count] = wordCount
-            }
-        }
-    }
-
     fun insertAll(words: List<Word>) {
         words.forEach {
             insert(
@@ -31,6 +21,16 @@ class DatabaseConnector {
                 korean = it.koreanWord,
                 wordCount = it.count,
             )
+        }
+    }
+
+    private fun insert(english: String, korean: String, wordCount: Int) {
+        transaction {
+            WordEntity.insert {
+                it[englishWord] = english
+                it[koreanWord] = korean
+                it[count] = wordCount
+            }
         }
     }
 

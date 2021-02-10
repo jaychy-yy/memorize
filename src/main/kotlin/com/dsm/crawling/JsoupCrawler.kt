@@ -1,15 +1,15 @@
 package com.dsm.crawling
 
 import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
 
 class JsoupCrawler(
-    private val url: String = "https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/"
+    private val url: String = "https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/",
+    private val document: Document = Jsoup.connect(url).get()
 ) : SpringBootDocsCrawler {
 
     override fun docsCrawling() =
-        Jsoup.connect(url)
-            .get()
-            .getElementsByTag("p")
+        document.getElementsByTag("p")
             .asSequence()
             .map { it.text() }
             .map { it.split(" ") }
