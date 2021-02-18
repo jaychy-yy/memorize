@@ -20,7 +20,7 @@ class StageService(
             .map { (index, words) ->
                 Stage(
                     stage = index + 1,
-                    average = words.sumOf { it.count },
+                    average = (words.sumOf { it.count }) / words.size,
                 )
             }
 
