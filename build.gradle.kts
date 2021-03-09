@@ -27,8 +27,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     runtimeOnly("mysql:mysql-connector-java")
 
-    implementation("io.jsonwebtoken:jjwt:0.9.1")
-
     implementation("org.jetbrains.exposed:exposed:0.5.0")
     implementation("org.jsoup:jsoup:1.11.1")
 
