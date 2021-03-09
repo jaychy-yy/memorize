@@ -21,7 +21,13 @@
 - Gradle 6.7.1
 - Retrofit 2.9.0
 - Kotlin Exposed 0.5.0
+- Kotlin Coroutine 1.4.2
+- Spring Data JPA
+- Jsoup 1.11.1
 - 자세한 사항은 build.gradle.kts에서 참고해주세요.
+
+## Database
+- MySQL 8.x.x
 
 ## APIs
 [GitBook] https://app.gitbook.com/@jinjin0816/s/springbootdocscrawler
