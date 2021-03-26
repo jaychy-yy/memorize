@@ -1,4 +1,4 @@
-# EnglishMemorizationBookForDeveloper
+# 개발자용 영어 단어 암기장
 ![EnglishMemorizationBookForDevelop_logo](https://user-images.githubusercontent.com/48639421/112570841-26767480-8e2a-11eb-9095-34f17d84b95a.JPG)  
 영어 단어를 공부하려고 하는데 세상엔 영어 단어가 너무 많다...  
 하지만 개발하는데 사용하는 영어 단어는 한정적이므로  
