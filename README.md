@@ -18,14 +18,14 @@
 - Kakao Translation API 카카오 문서 (https://developers.kakao.com/docs/latest/ko/translate/dev-guide)
 
 ## Library & Framework
-- Spring Boot 2.4.1
 - Kotlin 1.4.21
 - Gradle 6.7.1
-- Retrofit 2.9.0
+- Jsoup 1.11.1
 - Kotlin Exposed 0.5.0
 - Kotlin Coroutine 1.4.2
+- Retrofit 2.9.0
+- Spring Boot 2.4.1
 - Spring Data JPA
-- Jsoup 1.11.1
 - 자세한 사항은 build.gradle.kts에서 참고해주세요.
 
 ## Database
